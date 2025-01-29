@@ -47,80 +47,147 @@
 
     <p>By visualizing the correlation matrix, we can easily spot patterns that will help guide our further analysis and give us deeper insights into how these factors contribute to diabetes.</p>
 
-    <!-- Image added here -->
-    <img src="https://github.com/clarktommie/clarktommie.github.io-DiabetesRisk/blob/383f02bf86e882240b5ddda61bc52f2272629243/Correlation2.jpeg" alt="Correlation Matrix Heatmap 2">
+    <!-- Styled image container -->
+    <div style="display: flex; justify-content: center; margin: 20px 0;">
+        <img src="https://raw.githubusercontent.com/clarktommie/clarktommie.github.io-DiabetesRisk/383f02bf86e882240b5ddda61bc52f2272629243/Correlation2.jpeg" 
+             alt="Correlation Matrix Heatmap 2" 
+             style="max-width: 90%; width: 500px; height: auto; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+    </div>
+
 </section>
 <section>
     <h2>Analyzing HbA1c Distribution by Diabetes Status</h2>
 
     <p>To better understand how <strong>HbA1c</strong> levels vary between diabetic and non-diabetic individuals, we can visualize the distribution of this key indicator using a <strong>box plot</strong>. <strong>HbA1c</strong> is an important measure for diagnosing and managing diabetes, as it reflects the average blood sugar levels over the past two to three months.</p>
 
-    <p>In this visualization, the x-axis represents the <strong>Diabetes Status</strong> (whether an individual is Diabetic or Non-Diabetic), and the y-axis shows the <strong>HbA1c</strong> values. The box plot helps us see the spread of HbA1c levels within each group, including the median, interquartile range, and potential outliers.</p>
+    <div style="display: flex; align-items: center; gap: 20px; flex-wrap: wrap;">
+        <div style="flex: 1; min-width: 300px;">
+            <p>The x-axis represents the <strong>Diabetes Status</strong> (whether an individual is Diabetic or Non-Diabetic), while the y-axis shows the <strong>HbA1c</strong> values. The box plot provides a clear visualization of the spread of HbA1c levels within each group, including:</p>
+            <ul>
+                <li><strong>Median:</strong> The central line inside the box.</li>
+                <li><strong>Interquartile Range (IQR):</strong> The box itself, showing the middle 50% of data.</li>
+                <li><strong>Outliers:</strong> Individual points beyond the whiskers.</li>
+            </ul>
+            <p>This plot allows us to compare the central tendencies and variability of <strong>HbA1c</strong> levels across different diabetes statuses, providing valuable insights into how HbA1c differs between individuals with and without diabetes.</p>
+        </div>
 
-    <p>From the plot, we can easily compare the central tendencies and variability of <strong>HbA1c</strong> levels across different diabetes statuses, offering insights into how HbA1c differs between individuals with and without diabetes.</p>
-
-    <!-- Image added here -->
-    <img src="https://github.com/clarktommie/clarktommie.github.io-DiabetesRisk/blob/383f02bf86e882240b5ddda61bc52f2272629243/BoxPlot.jpeg" alt="Box Plot of HbA1c Distribution by Diabetes Status">
+        <div style="flex: 1; min-width: 300px; text-align: center;">
+            <img src="https://raw.githubusercontent.com/clarktommie/clarktommie.github.io-DiabetesRisk/383f02bf86e882240b5ddda61bc52f2272629243/BoxPlot.jpeg" 
+                 alt="Box Plot of HbA1c Distribution by Diabetes Status" 
+                 style="max-width: 100%; width: 450px; height: auto; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+            <p style="font-size: 0.9em; color: gray;">Figure: Box Plot of HbA1c Distribution by Diabetes Status</p>
+        </div>
+    </div>
 </section>
+
 <section>
     <h2>Distribution of BMI by Diabetes Status</h2>
 
     <p>Understanding how <strong>Body Mass Index (BMI)</strong> varies across different diabetes statuses can offer valuable insights into the relationship between weight and diabetes risk. To explore this, we’ve plotted <strong>histograms</strong> of BMI values for three groups: <strong>Diabetic</strong>, <strong>NonDiabetic</strong>, and <strong>PreDiabetes</strong> individuals.</p>
 
-    <p>Each histogram shows the distribution of BMI for individuals within each group, with the color coding indicating the diabetes status: <strong>red</strong> for Diabetic, <strong>blue</strong> for NonDiabetic, and <strong>green</strong> for PreDiabetes. The <strong>KDE (Kernel Density Estimate)</strong> curve is also included to give us a smooth estimate of the distribution.</p>
+    <div style="display: flex; align-items: center; gap: 20px; flex-wrap: wrap;">
+        <div style="flex: 1; min-width: 300px;">
+            <p>Each histogram displays the distribution of BMI within each group, using distinct colors for easy comparison:</p>
+            <ul>
+                <li><span style="color: red;"><strong>Red:</strong></span> Diabetic</li>
+                <li><span style="color: blue;"><strong>Blue:</strong></span> NonDiabetic</li>
+                <li><span style="color: green;"><strong>Green:</strong></span> PreDiabetes</li>
+            </ul>
+            <p>Additionally, a <strong>Kernel Density Estimate (KDE)</strong> curve is included to provide a smooth estimate of the distribution.</p>
+            <p>By comparing these histograms, we can visually assess differences in BMI distribution among the groups. This helps determine whether individuals with diabetes tend to have higher BMIs and how PreDiabetes fits into the pattern. Recognizing these trends can aid in understanding BMI’s role in diabetes risk.</p>
+        </div>
 
-    <p>By comparing these histograms, we can visually assess how the BMI distribution differs between the groups. This helps us understand whether Diabetic individuals tend to have higher BMIs than NonDiabetic individuals, and how PreDiabetes fits into the picture. This visualization allows us to see patterns that may point to BMI as a key factor in the likelihood of developing diabetes.</p>
-
-    <!-- Image added here -->
-    <img src="https://github.com/clarktommie/clarktommie.github.io-DiabetesRisk/blob/383f02bf86e882240b5ddda61bc52f2272629243/Histogram.jpeg" alt="BMI Distribution Histogram by Diabetes Status">
+        <div style="flex: 1; min-width: 300px; text-align: center;">
+            <img src="https://raw.githubusercontent.com/clarktommie/clarktommie.github.io-DiabetesRisk/383f02bf86e882240b5ddda61bc52f2272629243/Histogram.jpeg" 
+                 alt="BMI Distribution Histogram by Diabetes Status" 
+                 style="max-width: 100%; width: 450px; height: auto; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+            <p style="font-size: 0.9em; color: gray;">Figure: BMI Distribution Histogram by Diabetes Status</p>
+        </div>
+    </div>
 </section>
 <section>
     <h2>BMI vs AGE by Diabetes Status</h2>
 
-    <p>To explore how <strong>BMI</strong> and <strong>AGE</strong> are related to diabetes status, we’ve created a scatter plot that shows the relationship between these two variables across three groups: <strong>Diabetic</strong>, <strong>NonDiabetic</strong>, and <strong>PreDiabetes</strong> individuals.</p>
+    <p>To explore how <strong>BMI</strong> and <strong>AGE</strong> are related to diabetes status, we’ve created a scatter plot that visualizes their relationship across three groups: <strong>Diabetic</strong>, <strong>NonDiabetic</strong>, and <strong>PreDiabetes</strong> individuals.</p>
 
-    <p>In this plot, we use different colors to represent each group: <strong>red</strong> for Diabetic, <strong>blue</strong> for NonDiabetic, and <strong>green</strong> for PreDiabetes. Each point on the scatter plot corresponds to an individual, with their <strong>AGE</strong> on the x-axis and their <strong>BMI</strong> on the y-axis.</p>
+    <div style="display: flex; align-items: center; gap: 20px; flex-wrap: wrap;">
+        <div style="flex: 1; min-width: 300px;">
+            <p>The plot uses distinct colors for each group to highlight their distribution:</p>
+            <ul>
+                <li><span style="color: red;"><strong>Red:</strong></span> Diabetic</li>
+                <li><span style="color: blue;"><strong>Blue:</strong></span> NonDiabetic</li>
+                <li><span style="color: green;"><strong>Green:</strong></span> PreDiabetes</li>
+            </ul>
+            <p>Each point represents an individual, with <strong>AGE</strong> on the x-axis and <strong>BMI</strong> on the y-axis.</p>
+            <p>A <strong>horizontal line at BMI = 25</strong> is included, which is a commonly used threshold for distinguishing normal weight from overweight. This reference line helps us examine whether individuals with a higher BMI are more likely to be diabetic or in the prediabetes range.</p>
+            <p>By analyzing this scatter plot, we can assess trends such as:</p>
+            <ul>
+                <li>Do older individuals tend to have higher BMIs?</li>
+                <li>Is there a clear distinction in BMI between those with and without diabetes?</li>
+                <li>Are most diabetic individuals above the BMI threshold of 25?</li>
+            </ul>
+        </div>
 
-    <p>We’ve also added a <strong>horizontal line at BMI = 25</strong>, which is often used as a threshold to differentiate between normal weight and overweight. This line provides context for how BMI levels change across different age groups and diabetes statuses. It can also help us see if individuals with a higher BMI are more likely to be diabetic or in the prediabetes range.</p>
-
-    <p>By examining this scatter plot, we can visually assess whether there are trends, such as whether older individuals tend to have higher BMIs or whether there’s a clear distinction in BMI between those with diabetes and those without.</p>
-
-    <!-- Image added here -->
-    <img src="https://github.com/clarktommie/clarktommie.github.io-DiabetesRisk/blob/383f02bf86e882240b5ddda61bc52f2272629243/BMIvsAGE.jpeg" alt="BMI vs AGE Scatter Plot by Diabetes Status">
+        <div style="flex: 1; min-width: 300px; text-align: center;">
+            <img src="https://raw.githubusercontent.com/clarktommie/clarktommie.github.io-DiabetesRisk/383f02bf86e882240b5ddda61bc52f2272629243/BMIvsAGE.jpeg" 
+                 alt="BMI vs AGE Scatter Plot by Diabetes Status" 
+                 style="max-width: 100%; width: 450px; height: auto; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+            <p style="font-size: 0.9em; color: gray;">Figure: BMI vs AGE Scatter Plot by Diabetes Status</p>
+        </div>
+    </div>
 </section>
 <section>
     <h2>AGE vs HbA1c by Diabetes Status</h2>
 
-    <p>To better understand how <strong>AGE</strong> and <strong>HbA1c</strong> relate to diabetes status, we’ve created a scatter plot where we plot <strong>AGE</strong> on the x-axis and <strong>HbA1c</strong> on the y-axis. The plot is colored based on diabetes status, with different hues representing Diabetic individuals, NonDiabetic individuals, and PreDiabetes individuals.</p>
+    <p>To better understand how <strong>AGE</strong> and <strong>HbA1c</strong> relate to diabetes status, we’ve created a scatter plot that visualizes these variables: <strong>AGE</strong> on the x-axis and <strong>HbA1c</strong> on the y-axis. The plot is color-coded to differentiate between the groups: <strong>Diabetic</strong>, <strong>NonDiabetic</strong>, and <strong>PreDiabetes</strong> individuals.</p>
 
-    <p>In this visualization, we’ve added a <strong>horizontal line at HbA1c = 6.5</strong>, which is the threshold often used to diagnose diabetes. An HbA1c level of 6.5% or higher is generally considered indicative of diabetes. This line provides an important reference point to see how <strong>AGE</strong> and <strong>HbA1c</strong> interact and whether certain age groups have HbA1c levels that cross this threshold.</p>
+    <div style="display: flex; align-items: center; gap: 20px; flex-wrap: wrap;">
+        <div style="flex: 1; min-width: 300px;">
+            <p>In this visualization, we’ve included a <strong>horizontal line at HbA1c = 6.5%</strong>, which is the typical threshold for diagnosing diabetes. This line serves as an important reference point, helping us identify individuals whose HbA1c levels are indicative of diabetes.</p>
+            <p>The scatter plot allows us to explore the interaction between <strong>AGE</strong> and <strong>HbA1c</strong>, shedding light on whether certain age groups are more likely to exceed this threshold and experience poor blood sugar control.</p>
+            <p>By examining the plot, we can assess patterns such as:</p>
+            <ul>
+                <li>Are older individuals more likely to have higher HbA1c levels?</li>
+                <li>Do Diabetic individuals have higher HbA1c levels compared to NonDiabetic individuals?</li>
+                <li>How does PreDiabetes compare in terms of age and HbA1c distribution?</li>
+            </ul>
+        </div>
 
-    <p>By examining this plot, we can visually assess how <strong>age</strong> influences <strong>HbA1c</strong> levels and whether there are clear patterns indicating that older individuals or those in certain diabetes categories tend to have higher HbA1c values, which could indicate poor blood sugar control.</p>
-
-    <!-- Image added here -->
-    <img src="https://github.com/clarktommie/clarktommie.github.io-DiabetesRisk/blob/383f02bf86e882240b5ddda61bc52f2272629243/AGE-HBA1C.jpeg" alt="AGE vs HbA1c Scatter Plot by Diabetes Status">
+        <div style="flex: 1; min-width: 300px; text-align: center;">
+            <img src="https://raw.githubusercontent.com/clarktommie/clarktommie.github.io-DiabetesRisk/383f02bf86e882240b5ddda61bc52f2272629243/AGE-HBA1C.jpeg" 
+                 alt="AGE vs HbA1c Scatter Plot by Diabetes Status" 
+                 style="max-width: 100%; width: 450px; height: auto; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+            <p style="font-size: 0.9em; color: gray;">Figure: AGE vs HbA1c Scatter Plot by Diabetes Status</p>
+        </div>
+    </div>
 </section>
 <section>
     <h2>HbA1c vs BMI by Diabetes Status</h2>
 
-    <p>In this scatter plot, we explore the relationship between <strong>HbA1c</strong> and <strong>BMI</strong> for individuals categorized as <strong>Diabetic</strong>, <strong>NonDiabetic</strong>, and <strong>PreDiabetes</strong>. We use different colors to represent each group: <strong>red</strong> for Diabetic individuals, <strong>blue</strong> for NonDiabetic individuals, and <strong>green</strong> for PreDiabetes individuals.</p>
+    <p>In this scatter plot, we explore the relationship between <strong>HbA1c</strong> and <strong>BMI</strong> for individuals categorized as <strong>Diabetic</strong>, <strong>NonDiabetic</strong>, and <strong>PreDiabetes</strong>. Different colors are used to represent each group: <strong>red</strong> for Diabetic, <strong>blue</strong> for NonDiabetic, and <strong>green</strong> for PreDiabetes individuals.</p>
 
-    <p>We have also drawn several threshold lines on the plot to help us interpret the data more effectively:</p>
-    <ul>
-        <li>A <strong>horizontal line at BMI = 25</strong>, representing the typical cutoff for overweight, which can be indicative of a higher risk for diabetes.</li>
-        <li>Two <strong>vertical lines for HbA1c thresholds</strong>:
+    <div style="display: flex; gap: 30px; flex-wrap: wrap;">
+        <div style="flex: 1; min-width: 300px;">
+            <p>We’ve also included threshold lines to better interpret the data:</p>
             <ul>
-                <li>A <strong>purple line at HbA1c = 5.7%</strong>, marking the cutoff for PreDiabetes.</li>
-                <li>An <strong>orange line at HbA1c = 6.5%</strong>, marking the threshold for a diabetes diagnosis.</li>
+                <li>A <strong>horizontal line at BMI = 25</strong>, representing the typical cutoff for overweight, which can indicate a higher risk for diabetes.</li>
+                <li>Two <strong>vertical lines for HbA1c thresholds</strong>:
+                    <ul>
+                        <li>A <strong>purple line at HbA1c = 5.7%</strong>, marking the cutoff for PreDiabetes.</li>
+                        <li>An <strong>orange line at HbA1c = 6.5%</strong>, marking the threshold for a diabetes diagnosis.</li>
+                    </ul>
+                </li>
             </ul>
-        </li>
-    </ul>
+            <p>By examining this plot, we can assess how <strong>HbA1c</strong> and <strong>BMI</strong> interact across different diabetes statuses. This visualization helps identify if individuals with higher HbA1c tend to have higher BMI values, and where the groups begin to overlap or diverge, suggesting insights into how these factors together could influence diabetes risk.</p>
+        </div>
 
-    <p>By examining this plot, we can assess how <strong>HbA1c</strong> and <strong>BMI</strong> interact across different diabetes statuses. It allows us to observe whether individuals with higher HbA1c levels tend to have higher BMIs, and if so, at what points the groups begin to overlap or diverge. This insight could help in understanding how elevated HbA1c and BMI might together indicate a higher likelihood of diabetes or prediabetes.</p>
-
-    <!-- Image added here -->
-    <img src="https://github.com/clarktommie/clarktommie.github.io-DiabetesRisk/blob/383f02bf86e882240b5ddda61bc52f2272629243/HBA1C-BMI.jpeg" alt="HbA1c vs BMI Scatter Plot by Diabetes Status">
+        <div style="flex: 1; min-width: 300px; text-align: center;">
+            <img src="https://raw.githubusercontent.com/clarktommie/clarktommie.github.io-DiabetesRisk/383f02bf86e882240b5ddda61bc52f2272629243/HBA1C-BMI.jpeg" 
+                 alt="HbA1c vs BMI Scatter Plot by Diabetes Status" 
+                 style="max-width: 100%; height: auto; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+            <p style="font-size: 0.9em; color: gray;">Figure: HbA1c vs BMI Scatter Plot by Diabetes Status</p>
+        </div>
+    </div>
 </section>
-
 </body>
 </html>
