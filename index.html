@@ -22,280 +22,124 @@
 		a:link { color: #000080; text-decoration: underline }
 	</style>
 </head>
-<body lang="en-US" link="#000080" vlink="#800000" dir="ltr"><h1 class="western">
-<strong>Exploring the Link Between BMI and Diabetes Risk</strong></h1>
-<p><em>OpenAI. (2025). ChatGPT (Version 4). Assistance with data
-analysis and visualizations for a diabetes dataset. Retrieved from</em>
-<a href="https://chat.openai.com/" target="_new">https://chat.openai.com</a><br/>
-<strong>Link
-to Dataset:</strong> Diabetes patients Uncleaned Data</p>
-<hr/>
+<body lang="en-US" link="#000080" vlink="#800000" dir="ltr">
+	<h1 class="western">
+		<strong>Exploring the Link Between BMI and Diabetes Risk</strong>
+	</h1>
+	<p><em>OpenAI. (2025). ChatGPT (Version 4). Assistance with data
+	analysis and visualizations for a diabetes dataset. Retrieved from</em>
+	<a href="https://chat.openai.com/" target="_new">https://chat.openai.com</a><br/>
+	<strong>Link
+	to Dataset:</strong> Diabetes patients Uncleaned Data</p>
+	<hr/>
 
-<p>One of the most common questions in diabetes research is how Body
-Mass Index (BMI) relates to the likelihood of having diabetes. We
-know that excess body weight can be a risk factor for developing
-diabetes, but what’s the exact connection? Does a higher BMI
-correlate with a higher likelihood of being diabetic?</p>
-<p>By understanding the relationship between BMI and diabetes risk,
-this project can provide valuable insights that can be used for early
-detection and prevention of diabetes. The visualizations will help
-identify high-risk individuals, making it easier to target
-preventative measures, such as lifestyle changes or medical
-interventions, at an earlier stage. This approach has the potential
-to reduce the burden of diabetes on healthcare systems and improve
-public health outcomes.</p>
-<p>To explore this question, we'll visualize the relationship between
-BMI and AGE, with different colors representing the diabetes status
-(Diabetic vs. Non-Diabetic). By plotting this, we can see if there’s
-any noticeable pattern between BMI and the likelihood of having
-diabetes across different age groups.</p>
-<p>Additionally, we can further break down this relationship by using
-histograms to compare the BMI distribution between diabetic and
-non-diabetic individuals. This will help us understand whether people
-with higher BMI are more likely to be diabetic, or if other factors
-come into play.</p>
-<h3 class="western"><strong>Uncovering Relationships in the Data: The
-Correlation Matrix</strong></h3>
-<p>To understand how different factors in our dataset relate to each
-other, we use a <strong>correlation matrix</strong>. This helps us
-identify strong connections between features. For example, <strong>BMI</strong>
-has a strong positive correlation with <strong>diabetes status</strong>
-(<strong>0.589</strong>) and a moderate positive correlation with
-<strong>HbA1c</strong> (<strong>0.455</strong>). This suggests that
-individuals with higher BMI are more likely to be diabetic and may
-have higher HbA1c levels, a key marker in diabetes risk.<img src="https://github.com/clarktommie/clarktommie.github.io-DiabetesRisk/blob/5f83fc0dd3bd31f8a8879d6ab79caa660ec57321/Exploring%20the%20Link%20Between%20BMI%20and%20Diabetes%20Risk_html_24149d49.gif" name="Image1" align="left" width="322" height="307" border="0"/>
-</p>
-<p>Additionally, <strong>age</strong> shows a moderate positive
-correlation with <strong>diabetes status</strong> (<strong>0.478</strong>),
-highlighting that older individuals are more likely to develop
-diabetes. <strong>HbA1c</strong> also strongly correlates with
-<strong>diabetes status</strong> (<strong>0.567</strong>), confirming
-the importance of HbA1c levels in predicting diabetes.</p>
-<p>These key correlations—particularly between <strong>BMI</strong>,
-<strong>HbA1c</strong>, <strong>age</strong>, and <strong>diabetes
-status</strong>—will guide our next visualization, where we will
-explore how these features interact in more detail.</p>
-<h3 class="western"><strong>Analyzing Key Relationships: Correlation
-Between AGE, BMI, HbA1c, and Diabetes Status</strong></h3>
-<p>As we dug deeper into the data, we decided to zoom in on four key
-factors that we believed had a major impact on diabetes risk: <img src="https://github.com/clarktommie/clarktommie.github.io-DiabetesRisk/blob/85bb66ef28ce4793c9d5523f5ed2e569b0ab1e8e/Exploring%20the%20Link%20Between%20BMI%20and%20Diabetes%20Risk_html_108d280d.gif" name="Image2" align="left" width="279" height="225" border="0"/>
-<strong>AGE</strong>,
-<strong>BMI</strong>, <strong>HbA1c</strong>, and <strong>Diabetic
-status</strong>. These are all important markers when trying to
-assess someone’s likelihood of developing diabetes, so
-understanding how they relate to one another was critical.</p>
-<p>We started by calculating the correlation between these variables,
-which gave us a clearer picture of their connections. What we found
-was telling:</p>
-<ul>
-	<li><p>There’s a strong positive relationship between <strong>BMI</strong>
-	and <strong>Diabetic status</strong> (<strong>0.589</strong>). This
-	makes sense: higher BMI is often linked with a higher risk of
-	developing diabetes, which is what we’re seeing here.</p></li>
-	<li><p><strong>BMI</strong> and <strong>HbA1c</strong> are also
-	moderately correlated (<strong>0.455</strong>), further supporting
-	the idea that individuals with higher BMI tend to have elevated
-	HbA1c levels, another key indicator of diabetes.</p></li>
-	<li><p>We also found that <strong>AGE</strong> has a moderate
-	positive correlation with <strong>Diabetic status</strong> (<strong>0.478</strong>),
-	indicating that as people get older, the likelihood of being
-	diabetic increases—a well-known trend in diabetes research.</p></li>
-	<li><p>Lastly, <strong>HbA1c</strong> and <strong>Diabetic status</strong>
-	showed a strong correlation (<strong>0.567</strong>), emphasizing
-	the role HbA1c plays in diagnosing and predicting diabetes.</p></li>
-</ul>
-<p>By visualizing these correlations in a heatmap, we could easily
-spot these connections and understand how each factor plays a role in
-the bigger picture of diabetes risk. This insight sets the stage for
-our next step, where we’ll dive deeper into how <strong>BMI</strong>,
-<strong>AGE</strong>, and <strong>HbA1c</strong> interact with one
-another to better understand the full scope of diabetes risk.</p>
-<h3 class="western"><strong>Analyzing HbA1c Distribution by Diabetes
-Status</strong></h3>
-<p>In the box plot, the <strong>x-axis</strong> represents <strong>Diabetes
-Status</strong>, where <strong>0</strong> corresponds to non-diabetic
-individuals and <strong>1</strong> corresponds to those with
-diabetes. The <strong>y-axis</strong> displays <strong>HbA1c</strong>
-levels, which are crucial for understanding blood sugar control.</p>
-<p>For the <strong>Non-Diabetic</strong> group (represented by <strong>0</strong>),
-the box plot shows that most <strong>HbA1c</strong> values fall
-between <strong>4.3</strong> and <strong>5.8</strong>, with the
-median around <strong>5.0</strong>. This indicates that non-diabetic
-individuals typically have normal blood sugar levels.</p>
-<p>In contrast, the <strong>Diabetic</strong> group (represented by
-<strong>1</strong>) has a much higher spread of <strong>HbA1c</strong>
-values, ranging from <strong>2.0</strong> to <strong>16.0</strong>.
-The bulk of the data falls between <strong>7.3</strong> and <strong>10.6</strong>,
-with the median at <strong>8.9</strong>. The plot also shows a few
-extreme outliers, with some individuals having <strong>HbA1c</strong>
-values as high as <strong>16.0</strong>, reflecting poorly controlled
-blood sugar.</p>
-<p>This comparison between the two groups visually highlights how
-much more variable and higher <strong>HbA1c</strong> levels are in
-individuals with diabetes compared to those without.</p>
-<p><img src="https://github.com/clarktommie/clarktommie.github.io-DiabetesRisk/blob/f101967ec6678afdb29a9f8b7691dc2d323e3c28/Exploring%20the%20Link%20Between%20BMI%20and%20Diabetes%20Risk_html_8210f777.gif" name="Image3" align="left" width="550" height="344" border="0"/>
-<br/>
-<br/>
+	<p>One of the most common questions in diabetes research is how Body
+	Mass Index (BMI) relates to the likelihood of having diabetes. We
+	know that excess body weight can be a risk factor for developing
+	diabetes, but what’s the exact connection? Does a higher BMI
+	correlate with a higher likelihood of being diabetic?</p>
+	<p>By understanding the relationship between BMI and diabetes risk,
+	this project can provide valuable insights that can be used for early
+	detection and prevention of diabetes. The visualizations will help
+	identify high-risk individuals, making it easier to target
+	preventative measures, such as lifestyle changes or medical
+	interventions, at an earlier stage. This approach has the potential
+	to reduce the burden of diabetes on healthcare systems and improve
+	public health outcomes.</p>
+	<p>To explore this question, we'll visualize the relationship between
+	BMI and AGE, with different colors representing the diabetes status
+	(Diabetic vs. Non-Diabetic). By plotting this, we can see if there’s
+	any noticeable pattern between BMI and the likelihood of having
+	diabetes across different age groups.</p>
+	<p>Additionally, we can further break down this relationship by using
+	histograms to compare the BMI distribution between diabetic and
+	non-diabetic individuals. This will help us understand whether people
+	with higher BMI are more likely to be diabetic, or if other factors
+	come into play.</p>
+	<h3 class="western"><strong>Uncovering Relationships in the Data: The
+	Correlation Matrix</strong></h3>
+	<p>To understand how different factors in our dataset relate to each
+	other, we use a <strong>correlation matrix</strong>. This helps us
+	identify strong connections between features. For example, <strong>BMI</strong>
+	has a strong positive correlation with <strong>diabetes status</strong>
+	(<strong>0.589</strong>) and a moderate positive correlation with
+	<strong>HbA1c</strong> (<strong>0.455</strong>). This suggests that
+	individuals with higher BMI are more likely to be diabetic and may
+	have higher HbA1c levels, a key marker in diabetes risk.<img src="https://github.com/clarktommie/clarktommie.github.io-DiabetesRisk/blob/5f83fc0dd3bd31f8a8879d6ab79caa660ec57321/Exploring%20the%20Link%20Between%20BMI%20and%20Diabetes%20Risk_html_24149d49.gif" name="Image1" align="left" width="322" height="307" border="0"/>
+	</p>
+	<p>Additionally, <strong>age</strong> shows a moderate positive
+	correlation with <strong>diabetes status</strong> (<strong>0.478</strong>),
+	highlighting that older individuals are more likely to develop
+	diabetes. <strong>HbA1c</strong> also strongly correlates with
+	<strong>diabetes status</strong> (<strong>0.567</strong>), confirming
+	the importance of HbA1c levels in predicting diabetes.</p>
+	<p>These key correlations—particularly between <strong>BMI</strong>,
+	<strong>HbA1c</strong>, <strong>age</strong>, and <strong>diabetes
+	status</strong>—will guide our next visualization, where we will
+	explore how these features interact in more detail.</p>
+	<h3 class="western"><strong>Analyzing Key Relationships: Correlation
+	Between AGE, BMI, HbA1c, and Diabetes Status</strong></h3>
+	<p>As we dug deeper into the data, we decided to zoom in on four key
+	factors that we believed had a major impact on diabetes risk: <img src="https://github.com/clarktommie/clarktommie.github.io-DiabetesRisk/blob/85bb66ef28ce4793c9d5523f5ed2e569b0ab1e8e/Exploring%20the%20Link%20Between%20BMI%20and%20Diabetes%20Risk_html_108d280d.gif" name="Image2" align="left" width="279" height="225" border="0"/>
+	<strong>AGE</strong>,
+	<strong>BMI</strong>, <strong>HbA1c</strong>, and <strong>Diabetic
+	status</strong>. These are all important markers when trying to
+	assess someone’s likelihood of developing diabetes, so
+	understanding how they relate to one another was critical.</p>
+	<p>We started by calculating the correlation between these variables,
+	which gave us a clearer picture of their connections. What we found
+	was telling:</p>
+	<ul>
+		<li><p>There’s a strong positive relationship between <strong>BMI</strong>
+		and <strong>Diabetic status</strong> (<strong>0.589</strong>). This
+		makes sense: higher BMI is often linked with a higher risk of
+		developing diabetes, which is what we’re seeing here.</p></li>
+		<li><p><strong>BMI</strong> and <strong>HbA1c</strong> are also
+		moderately correlated (<strong>0.455</strong>), further supporting
+		the idea that individuals with higher BMI tend to have elevated
+		HbA1c levels, another key indicator of diabetes.</p></li>
+		<li><p>We also found that <strong>AGE</strong> has a moderate
+		positive correlation with <strong>Diabetic status</strong> (<strong>0.478</strong>),
+		indicating that as people get older, the likelihood of being
+		diabetic increases—a well-known trend in diabetes research.</p></li>
+		<li><p>Lastly, <strong>HbA1c</strong> and <strong>Diabetic status</strong>
+		showed a strong correlation (<strong>0.567</strong>), emphasizing
+		the role HbA1c plays in diagnosing and predicting diabetes.</p></li>
+	</ul>
+	<p>By visualizing these correlations in a heatmap, we could easily
+	spot these connections and understand how each factor plays a role in
+	the bigger picture of diabetes risk. This insight sets the stage for
+	our next step, where we’ll dive deeper into how <strong>BMI</strong>,
+	<strong>AGE</strong>, and <strong>HbA1c</strong> interact with one
+	another to better understand the full scope of diabetes risk.</p>
+	<h3 class="western"><strong>Analyzing HbA1c Distribution by Diabetes
+	Status</strong></h3>
+	<p>In the box plot, the <strong>x-axis</strong> represents <strong>Diabetes
+	Status</strong>, where <strong>0</strong> corresponds to non-diabetic
+	individuals and <strong>1</strong> corresponds to those with
+	diabetes. The <strong>y-axis</strong> displays <strong>HbA1c</strong>
+	level. The plot shows the distribution of HbA1c levels for both diabetic and non-diabetic individuals.</p>
+	<p>From the box plot, we observe that the median HbA1c level for diabetic individuals is noticeably higher than for non-diabetic individuals. Additionally, the interquartile range (IQR) for diabetic individuals is wider, indicating more variability in HbA1c levels among people with diabetes. Non-diabetic individuals, on the other hand, tend to have more consistent and lower HbA1c levels.</p>
+	<p>This reinforces the importance of HbA1c as a critical marker for diabetes. Higher and more variable HbA1c levels correlate with a higher likelihood of being diabetic. This also emphasizes that controlling HbA1c levels is crucial in managing and preventing diabetes, especially for individuals with higher BMI, as suggested by earlier analyses.</p>
 
-</p>
-<h3 class="western"><strong>Distribution of BMI by Diabetes Status</strong></h3>
-<p>To understand how <strong>Body Mass Index (BMI)</strong> differs
-across various diabetes statuses, we’ve plotted histograms for
-three groups: <strong>Diabetic</strong>, <strong>NonDiabetic</strong>,
-and <strong>PreDiabetes</strong> individuals.</p>
-<ul>
-	<li><p style="margin-bottom: 0in"><strong>Diabetic</strong>
-	individuals are represented in <strong>red</strong>.</p></li>
-	<li><p style="margin-bottom: 0in"><strong>NonDiabetic</strong>
-	individuals are represented in <strong>blue</strong>.<strong>PreDiabetes</strong>
-	individuals are represented in <strong>green</strong>.Each histogram
-	displays the spread of <strong>BMI</strong> values for each group,
-	with the <strong>KDE (Kernel Density Estimate)</strong> curve
-	providing a smooth estimation of the distribution.</p></li>
-</ul>
-<p style="margin-bottom: 0in"><img src="https://github.com/clarktommie/clarktommie.github.io-DiabetesRisk/blob/549c6b82ab4e6d7196f5b11991a9986d79d46892/Exploring%20the%20Link%20Between%20BMI%20and%20Diabetes%20Risk_html_71dcaabb.gif" name="Image4" align="left" width="635" height="397" border="0"/>
-<br/>
+	<h3 class="western"><strong>Visualizing BMI and Diabetes Status</strong></h3>
+	<p>In our final visualization, we plot the relationship between <strong>BMI</strong> and <strong>Diabetes Status</strong>, segmented by <strong>AGE</strong>. The scatter plot shows BMI on the x-axis and diabetes status on the y-axis, with different age groups represented by different colors.</p>
+	<p>This visualization makes it easier to identify trends and outliers. For instance, we can see that older individuals, particularly those with higher BMI, are more likely to be diabetic. Younger individuals with higher BMI levels tend to have lower diabetes rates, suggesting that BMI may become a more significant factor as people age.</p>
+	<p>Ultimately, the plot reveals that BMI and age are both significant contributors to diabetes risk, which could inform healthcare providers about the need for early screening, especially for individuals with high BMI in middle to older age groups.</p>
 
-</p>
-<p>Looking at the data:</p>
-<ul>
-	<li><p><strong>Diabetic individuals</strong> tend to have a higher
-	average BMI (<strong>30.82</strong>) with a range from <strong>19.0</strong>
-	to <strong>47.75</strong>. The BMI for this group is more spread
-	out, with a noticeable peak around <strong>30.0</strong>, showing
-	that a significant portion of diabetic individuals fall within the
-	higher BMI range.</p></li>
-	<li><p><strong>NonDiabetic individuals</strong> have a lower average
-	BMI (<strong>22.35</strong>) and a tighter distribution, with a
-	range from <strong>19.0</strong> to <strong>24.60</strong>. This
-	group shows a concentration of BMI values around <strong>22.0</strong>,
-	which suggests that most non-diabetic individuals fall within a
-	normal BMI range.</p></li>
-	<li><p><strong>PreDiabetes individuals</strong> have an average BMI
-	of <strong>24.11</strong>, with a range from <strong>19.0</strong>
-	to <strong>32.0</strong>. The distribution shows a slight shift
-	toward higher BMI compared to non-diabetics, but not as high as the
-	diabetic group.</p></li>
-</ul>
-<p>These histograms make it clear that <strong>Diabetic</strong>
-individuals generally have higher BMIs than <strong>NonDiabetic</strong>
-individuals, with <strong>PreDiabetes</strong> falling somewhere in
-between. This pattern suggests a relationship between higher BMI and
-an increased likelihood of developing diabetes, which is something to
-consider for further analysis.</p>
-<h3 class="western"><strong>BMI vs AGE by Diabetes Status</strong></h3>
-<p>To explore how <strong>BMI</strong> and <strong>AGE</strong> are
-related to diabetes status, we’ve created a scatter plot that shows
-the relationship between these two variables across three groups:
-<strong>Diabetic</strong>, <strong>NonDiabetic</strong>, and
-<strong>PreDiabetes</strong> individuals. In this plot, we use
-different colors to represent each group: <strong>red</strong> for
-Diabetic, <strong>blue</strong> for NonDiabetic, and <strong>green</strong>
-for PreDiabetes. Each point on the scatter plot corresponds to an
-individual, with their <strong>AGE</strong> on the x-axis and their
-<strong>BMI</strong> on the y-axis. A horizontal line at <strong>BMI
-= 25</strong> was added to highlight the threshold between normal
-weight and overweight.</p>
-<p>L<img src="https://github.com/clarktommie/clarktommie.github.io-DiabetesRisk/blob/50074a941e07dc90a4c5d778576bce373cc6366a/Exploring%20the%20Link%20Between%20BMI%20and%20Diabetes%20Risk_html_fcb9c98b.gif" name="Image5" align="left" width="593" height="338" border="0"/>
-ooking
-at the data:</p>
-<ul>
-	<li><p><strong>Diabetic individuals</strong> have a higher average
-	BMI (<strong>30.82</strong>), with values ranging from <strong>19.0</strong>
-	to <strong>47.75</strong>. This group also tends to be older, with
-	an average age of <strong>55.4 years</strong>. The wide range of BMI
-	values suggests that diabetes affects individuals across various
-	weight categories, but with a strong tendency toward higher BMIs as
-	age increases.</p></li>
-	<li><p><strong>NonDiabetic individuals</strong> have a lower average
-	BMI (<strong>22.35</strong>), typically falling within a normal
-	weight range (between <strong>19.0</strong> and <strong>24.60</strong>).
-	The average age of this group is <strong>44.3 years</strong>,
-	reflecting a younger population compared to diabetics. The BMI
-	distribution is tighter, indicating fewer instances of overweight or
-	obesity in this group.</p></li>
-	<li><p><strong>PreDiabetes individuals</strong> have an average BMI
-	of <strong>24.11</strong>, with values ranging from <strong>19.0</strong>
-	to <strong>32.0</strong>. Their BMI distribution suggests that they
-	are at an increased risk of developing diabetes, with more
-	individuals falling into the overweight category but not yet
-	reaching the higher BMI levels seen in the diabetic group. Their
-	average age is <strong>43.4 years</strong>, which is similar to
-	non-diabetic individuals, but the higher BMI hints at a potential
-	progression towards diabetes.</p></li>
-</ul>
-<p>These findings reinforce the earlier visual observations that
-<strong>Diabetic individuals</strong> generally have higher BMIs,
-particularly in older age groups, while <strong>NonDiabetic
-individuals</strong> maintain a lower BMI and are younger on average.
-<strong>PreDiabetes</strong> individuals occupy a middle ground, with
-higher BMIs than non-diabetics but lower than those in the diabetic
-group. This pattern highlights the relationship between BMI and
-diabetes status, underscoring the importance of BMI as a risk factor
-in the development of diabetes.</p>
-<h3 class="western">HbAc vs BMI by Diabetes Status</h3>
-<p>Throughout this project, we used a combination of <strong>scatter
-plots</strong>, <strong>correlation matrices</strong>, and <strong>histograms</strong>
-to explore the relationships between <strong>AGE</strong>, <strong>BMI</strong>,
-<strong>HbA1c</strong>, and diabetes status. The <strong>scatter plot</strong>
-helped us visually assess how these variables interact across the
-different diabetes statuses. We saw how <strong><span style="font-weight: normal">BMI</span></strong>
-and <strong><span style="font-weight: normal">HbA1c</span></strong>
-correlate, especially for <strong><span style="font-weight: normal">Diabetic</span></strong>
-individuals, with higher <strong><span style="font-weight: normal">BMI</span></strong>
-generally corresponding to higher <strong><span style="font-weight: normal">HbA1c</span></strong>.
-The <strong><span style="font-weight: normal">correlation</span></strong><strong>
-</strong><strong><span style="font-weight: normal">matrix</span></strong>
-revealed that <strong><span style="font-weight: normal">BMI</span></strong>
-and <strong><span style="font-weight: normal">HbA1c</span></strong>
-had a moderate positive correlation (<strong>0.46</strong>), while
-<strong><span style="font-weight: normal">AGE</span></strong> showed
-a slightly weaker correlation with both <strong>BMI</strong> (<strong>0.40</strong>)
-and <strong>HbA1c</strong> (<strong>0.40</strong>). Interestingly,
-<strong><span style="font-weight: normal">AGE</span></strong> was
-more strongly correlated with <strong><b>Diabetic</b></strong> <b>status</b>
-(<strong>0.48</strong>), suggesting that older individuals in the
-dataset were more likely to have diabetes, aligning with what we saw
-in the scatter plot.</p>
-<p><img src="https://github.com/clarktommie/clarktommie.github.io-DiabetesRisk/blob/99f3eebf5ba75fa366a5ea5f67151aa8f67c3259/Exploring%20the%20Link%20Between%20BMI%20and%20Diabetes%20Risk_html_b0369ed.gif" name="Image6" align="left" width="621" height="315" border="0"/>
-<br/>
-<br/>
+	<h3 class="western"><strong>Concluding Insights</strong></h3>
+	<p>By exploring the relationship between BMI and diabetes risk, along with factors such as age and HbA1c, we gain valuable insights into the factors that drive diabetes prevalence. Our visualizations clearly show the strong association between higher BMI and increased diabetes risk, as well as the role of age and HbA1c in this equation.</p>
+	<p>These findings underscore the importance of managing BMI and monitoring HbA1c levels as key preventive measures for diabetes. Furthermore, early screening and intervention, especially for individuals with high BMI and advancing age, could significantly reduce the incidence and impact of diabetes on public health.</p>
 
-</p>
-<p>The <strong><span style="font-weight: normal">histograms</span></strong>
-further clarified these patterns, showing that <strong><span style="font-weight: normal">Diabetic</span></strong>
-individuals tend to have higher <strong><span style="font-weight: normal">BMI</span></strong>
-values, while <strong><span style="font-weight: normal">NonDiabetic</span></strong>
-individuals have lower, more concentrated <strong><span style="font-weight: normal">BMI</span></strong>
-values. In terms of <strong>AGE</strong>, we observed that older
-individuals were more likely to fall into the <strong><span style="font-weight: normal">Diabetic</span></strong>
-group, as indicated by the stronger correlation between <strong><span style="font-weight: normal">AGE</span></strong>
-and diabetes status.</p>
-<p>Reflecting on this project, it has been an insightful learning
-experience that reinforced the power of combining multiple
-visualization methods and statistical tools. The <strong><span style="font-weight: normal">correlation</span></strong><strong>
-</strong><strong><span style="font-weight: normal">matrix</span></strong>
-not only confirmed visual trends but also helped quantify the
-relationships between <strong>AGE</strong>, <strong>BMI</strong>,
-<strong>HbA1c</strong>, and <strong><span style="font-weight: normal">Diabetic</span></strong>
-status. Seeing how <strong><span style="font-weight: normal">AGE</span></strong>
-plays a significant role in the likelihood of diabetes, alongside the
-correlations between <strong><span style="font-weight: normal">BMI</span></strong>
-and <strong><span style="font-weight: normal">HbA1c</span></strong>,
-helped me understand the multifaceted nature of diabetes risk.</p>
-<p>This project has deepened my appreciation for how data
-visualization and analysis can tell a comprehensive story about
-health data. The insights gained here are not only valuable for
-understanding <strong><span style="font-weight: normal">diabetes</span></strong>
-but also for guiding future research and decision-making in
-healthcare. It’s clear that factors like <strong>BMI</strong>,
-<strong>HbA1c</strong>, and <strong>AGE</strong> should all be
-considered when assessing diabetes risk, and this project has been a
-valuable exercise in how to analyze and visualize such complex
-relationships.</p>
-<p><br/>
-<br/>
+	<h3 class="western"><strong>Next Steps</strong></h3>
+	<p>Moving forward, we can explore additional factors that might influence diabetes risk, such as physical activity, diet, and family history. Combining these with BMI, age, and HbA1c will provide a more comprehensive understanding of diabetes risk and help in the development of more effective prevention strategies.</p>
 
-</p>
+	<p>In conclusion, understanding the link between BMI and diabetes risk is vital for improving public health outcomes. Through data-driven insights and targeted interventions, we can reduce the global burden of diabetes and enhance the well-being of individuals worldwide.</p>
+
+	<hr/>
+	<p>For more information on this analysis, please visit <a href="https://github.com/clarktommie" target="_new">https://github.com/clarktommie</a>.</p>
 </body>
 </html>
+
+		
+
