@@ -1,0 +1,94 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Styling for headings */
+h1 {
+    font-size: 2em;
+    text-align: center;
+    color: #2c3e50;
+}
+
+h3 {
+    font-size: 1.5em;
+    color: #2980b9;
+    margin-top: 20px;
+}
+
+/* Styling for paragraphs */
+p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+/* Strong text styling */
+strong {
+    font-weight: bold;
+    color: #e74c3c;
+}
+
+/* Emphasized text styling */
+em {
+    font-style: italic;
+    color: #16a085;
+}
+
+/* Links styling */
+a {
+    color: #2980b9;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* HR styling */
+hr {
+    border: 1px solid #ddd;
+    margin: 30px 0;
+}
+
+/* Image styling */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 10px 0;
+}
+
+img[align="left"] {
+    margin-right: 15px;
+    float: left;
+}
+
+/* List styling */
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+/* Add some space at the bottom of the page */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #2c3e50;
+    color: #ecf0f1;
+}
