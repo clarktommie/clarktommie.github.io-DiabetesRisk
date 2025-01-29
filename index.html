@@ -39,13 +39,37 @@
     <p>This step is crucial for figuring out which features are the most important for understanding diabetes and where we should focus our analysis next.</p>
 </section>
 <section>
+    <h2>Uncovering Relationships in the Data: The Correlation Matrix</h2>
+
+    <p>To understand how different factors in our dataset relate to each other, we use a correlation matrix. This allows us to identify strong connections between features and better understand the underlying relationships in the data.</p>
+
+    <p>For example, we observe that <strong>BMI</strong> has a strong positive correlation with <strong>diabetes status</strong> (0.589) and a moderate positive correlation with <strong>HbA1c</strong> (0.455). This suggests that individuals with higher BMI are more likely to be diabetic and may also exhibit higher HbA1c levels, a critical marker for diabetes risk.</p>
+
+    <p>Additionally, <strong>age</strong> shows a moderate positive correlation with <strong>diabetes status</strong> (0.478), indicating that older individuals are more likely to develop diabetes. <strong>HbA1c</strong> also strongly correlates with <strong>diabetes status</strong> (0.567), further emphasizing the importance of HbA1c levels in predicting diabetes.</p>
+
+    <p>These key correlations—particularly between BMI, HbA1c, age, and diabetes status—will guide our next visualization, where we will explore how these features interact in more detail.</p>
+
+    <!-- Styled image container -->
+    <div style="display: flex; justify-content: center; margin: 30px 0;">
+        <img src="https://raw.githubusercontent.com/clarktommie/clarktommie.github.io-DiabetesRisk/383f02bf86e882240b5ddda61bc52f2272629243/Correlation2.jpeg" 
+             alt="Correlation Matrix Heatmap 2" 
+             style="max-width: 100%; width: 700px; height: auto; border-radius: 12px; box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);">
+    </div>
+</section>
+<section>
     <h2>Analyzing Key Relationships: Correlation Between AGE, BMI, HbA1c, and Diabetes Status</h2>
 
-    <p>To deepen our understanding of the key factors influencing diabetes, we’ve focused on four important variables: <strong>AGE</strong>, <strong>BMI</strong>, <strong>HbA1c</strong>, and <strong>Diabetic status</strong>. These factors play crucial roles in assessing diabetes risk, so exploring their relationships with one another is vital.</p>
+    <p>As we dug deeper into the data, we decided to zoom in on four key factors that we believed had a major impact on diabetes risk: <strong>AGE</strong>, <strong>BMI</strong>, <strong>HbA1c</strong>, and <strong>Diabetic status</strong>. These are all important markers when trying to assess someone’s likelihood of developing diabetes, so understanding how they relate to one another was critical.</p>
 
-    <p>We computed the correlation matrix for these variables to identify any significant connections. The resulting heatmap provides a visual representation of the strength of these relationships. For example, a strong positive correlation between <strong>BMI</strong> and <strong>HbA1c</strong> is expected, given that both are key indicators of diabetes risk.</p>
+    <p>We started by calculating the correlation between these variables, which gave us a clearer picture of their connections. What we found was telling:</p>
+    <ul>
+        <li>There’s a <strong>strong positive relationship</strong> between <strong>BMI</strong> and <strong>Diabetic status</strong> (0.589). This makes sense: higher BMI is often linked with a higher risk of developing diabetes, which is what we’re seeing here.</li>
+        <li><strong>BMI</strong> and <strong>HbA1c</strong> are also <strong>moderately correlated</strong> (0.455), further supporting the idea that individuals with higher BMI tend to have elevated HbA1c levels, another key indicator of diabetes.</li>
+        <li>We also found that <strong>AGE</strong> has a <strong>moderate positive correlation</strong> with <strong>Diabetic status</strong> (0.478), indicating that as people get older, the likelihood of being diabetic increases—a well-known trend in diabetes research.</li>
+        <li>Lastly, <strong>HbA1c</strong> and <strong>Diabetic status</strong> showed a <strong>strong correlation</strong> (0.567), emphasizing the role HbA1c plays in diagnosing and predicting diabetes.</li>
+    </ul>
 
-    <p>By examining this matrix, we can quickly identify patterns that guide our analysis, offering valuable insights into how these factors influence the likelihood of diabetes.</p>
+    <p>By visualizing these correlations in a heatmap, we could easily spot these connections and understand how each factor plays a role in the bigger picture of diabetes risk. This insight sets the stage for our next step, where we’ll dive deeper into how BMI, AGE, and HbA1c interact with one another to better understand the full scope of diabetes risk.</p>
 
     <!-- Styled image container -->
     <div style="display: flex; justify-content: center; margin: 30px 0;">
@@ -57,81 +81,48 @@
 <section>
     <h2>Analyzing HbA1c Distribution by Diabetes Status</h2>
 
-    <p>To understand how <strong>HbA1c</strong> levels differ between diabetic and non-diabetic individuals, we visualize the distribution of this key metric using a <strong>box plot</strong>. <strong>HbA1c</strong> is critical for diagnosing and managing diabetes, as it reflects average blood sugar levels over the past two to three months.</p>
+    <p>In the box plot, the x-axis represents <strong>Diabetes Status</strong>, where 0 corresponds to non-diabetic individuals and 1 corresponds to those with diabetes. The y-axis displays <strong>HbA1c</strong> levels, which are crucial for understanding blood sugar control.</p>
 
-    <div style="display: flex; justify-content: space-between; gap: 30px; flex-wrap: wrap;">
-        <div style="flex: 1; min-width: 280px; padding: 20px;">
-            <p>The x-axis represents the <strong>Diabetes Status</strong> (whether an individual is Diabetic or Non-Diabetic), while the y-axis shows the <strong>HbA1c</strong> values. The box plot highlights the following elements:</p>
-            <ul>
-                <li><strong>Median:</strong> The central line within the box.</li>
-                <li><strong>Interquartile Range (IQR):</strong> The box itself, showing the middle 50% of the data.</li>
-                <li><strong>Outliers:</strong> Individual points that fall outside the whiskers.</li>
-            </ul>
-            <p>This visualization helps us compare the central tendencies and variability of <strong>HbA1c</strong> levels between Diabetic and Non-Diabetic individuals, offering insights into how HbA1c varies between these groups.</p>
-        </div>
+    <p>For the Non-Diabetic group (represented by 0), the box plot shows that most HbA1c values fall between 4.3 and 5.8, with the median around 5.0. This indicates that non-diabetic individuals typically have normal blood sugar levels.</p>
 
-        <div style="flex: 1; min-width: 300px; text-align: center;">
-            <img src="https://raw.githubusercontent.com/clarktommie/clarktommie.github.io-DiabetesRisk/383f02bf86e882240b5ddda61bc52f2272629243/BoxPlot.jpeg" 
-                 alt="Box Plot of HbA1c Distribution by Diabetes Status" 
-                 style="max-width: 100%; width: 450px; height: auto; border-radius: 12px; box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);">
-            <p style="font-size: 0.9em; color: gray; margin-top: 10px;">Figure: Box Plot of HbA1c Distribution by Diabetes Status</p>
-        </div>
+    <p>In contrast, the Diabetic group (represented by 1) has a much higher spread of HbA1c values, ranging from 2.0 to 16.0. The bulk of the data falls between 7.3 and 10.6, with the median at 8.9. The plot also shows a few extreme outliers, with some individuals having HbA1c values as high as 16.0, reflecting poorly controlled blood sugar.</p>
+
+    <p>This comparison between the two groups visually highlights how much more variable and higher <strong>HbA1c</strong> levels are in individuals with diabetes compared to those without.</p>
+
+    <!-- Styled image container -->
+    <div style="display: flex; justify-content: center; margin: 30px 0;">
+        <img src="https://raw.githubusercontent.com/clarktommie/clarktommie.github.io-DiabetesRisk/383f02bf86e882240b5ddda61bc52f2272629243/BoxPlot.jpeg" 
+             alt="Box Plot of HbA1c Distribution by Diabetes Status" 
+             style="max-width: 100%; width: 700px; height: auto; border-radius: 12px; box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);">
     </div>
 </section>
 <section>
     <h2>Distribution of BMI by Diabetes Status</h2>
 
-    <p>Understanding how <strong>Body Mass Index (BMI)</strong> varies across different diabetes statuses can offer valuable insights into the relationship between weight and diabetes risk. To explore this, we’ve plotted <strong>histograms</strong> of BMI values for three groups: <strong>Diabetic</strong>, <strong>NonDiabetic</strong>, and <strong>PreDiabetes</strong> individuals.</p>
+    <p>To understand how <strong>Body Mass Index (BMI)</strong> differs across various diabetes statuses, we’ve plotted histograms for three groups: <strong>Diabetic</strong>, <strong>NonDiabetic</strong>, and <strong>PreDiabetes</strong> individuals.</p>
 
-    <div style="display: flex; align-items: center; gap: 20px; flex-wrap: wrap;">
-        <div style="flex: 1; min-width: 300px;">
-            <p>Each histogram displays the distribution of BMI within each group, using distinct colors for easy comparison:</p>
-            <ul>
-                <li><span style="color: red;"><strong>Red:</strong></span> Diabetic</li>
-                <li><span style="color: blue;"><strong>Blue:</strong></span> NonDiabetic</li>
-                <li><span style="color: green;"><strong>Green:</strong></span> PreDiabetes</li>
-            </ul>
-            <p>Additionally, a <strong>Kernel Density Estimate (KDE)</strong> curve is included to provide a smooth estimate of the distribution.</p>
-            <p>By comparing these histograms, we can visually assess differences in BMI distribution among the groups. This helps determine whether individuals with diabetes tend to have higher BMIs and how PreDiabetes fits into the pattern. Recognizing these trends can aid in understanding BMI’s role in diabetes risk.</p>
-        </div>
+    <p>The histograms are color-coded to differentiate between the groups:</p>
+    <ul>
+        <li><span style="color: red;"><strong>Red:</strong></span> Diabetic</li>
+        <li><span style="color: blue;"><strong>Blue:</strong></span> NonDiabetic</li>
+        <li><span style="color: green;"><strong>Green:</strong></span> PreDiabetes</li>
+    </ul>
+    <p>Each histogram displays the spread of BMI values for each group, with the <strong>Kernel Density Estimate (KDE)</strong> curve providing a smooth estimation of the distribution.</p>
 
-        <div style="flex: 1; min-width: 300px; text-align: center;">
-            <img src="https://raw.githubusercontent.com/clarktommie/clarktommie.github.io-DiabetesRisk/383f02bf86e882240b5ddda61bc52f2272629243/Histogram.jpeg" 
-                 alt="BMI Distribution Histogram by Diabetes Status" 
-                 style="max-width: 100%; width: 450px; height: auto; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
-            <p style="font-size: 0.9em; color: gray;">Figure: BMI Distribution Histogram by Diabetes Status</p>
-        </div>
-    </div>
-</section>
-<section>
-    <h2>BMI vs AGE by Diabetes Status</h2>
+    <p>Looking at the data:</p>
+    <ul>
+        <li><strong>Diabetic individuals</strong> tend to have a higher average BMI (30.82) with a range from 19.0 to 47.75. The BMI for this group is more spread out, with a noticeable peak around 30.0, showing that a significant portion of diabetic individuals fall within the higher BMI range.</li>
+        <li><strong>NonDiabetic individuals</strong> have a lower average BMI (22.35) and a tighter distribution, with a range from 19.0 to 24.60. This group shows a concentration of BMI values around 22.0, which suggests that most non-diabetic individuals fall within a normal BMI range.</li>
+        <li><strong>PreDiabetes individuals</strong> have an average BMI of 24.11, with a range from 19.0 to 32.0. The distribution shows a slight shift toward higher BMI compared to non-diabetics, but not as high as the diabetic group.</li>
+    </ul>
 
-    <p>To explore how <strong>BMI</strong> and <strong>AGE</strong> are related to diabetes status, we’ve created a scatter plot that visualizes their relationship across three groups: <strong>Diabetic</strong>, <strong>NonDiabetic</strong>, and <strong>PreDiabetes</strong> individuals.</p>
+    <p>These histograms make it clear that Diabetic individuals generally have higher BMIs than NonDiabetic individuals, with PreDiabetes falling somewhere in between. This pattern suggests a relationship between higher BMI and an increased likelihood of developing diabetes, which is something to consider for further analysis.</p>
 
-    <div style="display: flex; align-items: center; gap: 20px; flex-wrap: wrap;">
-        <div style="flex: 1; min-width: 300px;">
-            <p>The plot uses distinct colors for each group to highlight their distribution:</p>
-            <ul>
-                <li><span style="color: red;"><strong>Red:</strong></span> Diabetic</li>
-                <li><span style="color: blue;"><strong>Blue:</strong></span> NonDiabetic</li>
-                <li><span style="color: green;"><strong>Green:</strong></span> PreDiabetes</li>
-            </ul>
-            <p>Each point represents an individual, with <strong>AGE</strong> on the x-axis and <strong>BMI</strong> on the y-axis.</p>
-            <p>A <strong>horizontal line at BMI = 25</strong> is included, which is a commonly used threshold for distinguishing normal weight from overweight. This reference line helps us examine whether individuals with a higher BMI are more likely to be diabetic or in the prediabetes range.</p>
-            <p>By analyzing this scatter plot, we can assess trends such as:</p>
-            <ul>
-                <li>Do older individuals tend to have higher BMIs?</li>
-                <li>Is there a clear distinction in BMI between those with and without diabetes?</li>
-                <li>Are most diabetic individuals above the BMI threshold of 25?</li>
-            </ul>
-        </div>
-
-        <div style="flex: 1; min-width: 300px; text-align: center;">
-            <img src="https://raw.githubusercontent.com/clarktommie/clarktommie.github.io-DiabetesRisk/383f02bf86e882240b5ddda61bc52f2272629243/BMIvsAGE.jpeg" 
-                 alt="BMI vs AGE Scatter Plot by Diabetes Status" 
-                 style="max-width: 100%; width: 450px; height: auto; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
-            <p style="font-size: 0.9em; color: gray;">Figure: BMI vs AGE Scatter Plot by Diabetes Status</p>
-        </div>
+    <!-- Styled image container -->
+    <div style="display: flex; justify-content: center; margin: 30px 0;">
+        <img src="https://raw.githubusercontent.com/clarktommie/clarktommie.github.io-DiabetesRisk/383f02bf86e882240b5ddda61bc52f2272629243/Histogram.jpeg" 
+             alt="BMI Distribution Histogram by Diabetes Status" 
+             style="max-width: 100%; width: 700px; height: auto; border-radius: 12px; box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);">
     </div>
 </section>
 <section>
