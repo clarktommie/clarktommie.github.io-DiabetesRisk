@@ -171,11 +171,20 @@
 
     <div style="display: flex; gap: 30px; flex-wrap: wrap; align-items: center;">
         <div style="flex: 1; min-width: 300px;">
-            <p>Throughout this project, we used a combination of scatter plots, correlation matrices, and histograms to explore the relationships between <strong>AGE</strong>, <strong>BMI</strong>, <strong>HbA1c</strong>, and <strong>diabetes status</strong>. The scatter plot helped us visually assess how these variables interact across the different diabetes statuses. We saw how BMI and HbA1c correlate, especially for Diabetic individuals, with higher BMI generally corresponding to higher HbA1c.</p>
+            <p>In this scatter plot, we explore the relationship between <strong>HbA1c</strong> and <strong>BMI</strong> for individuals categorized as <strong>Diabetic</strong>, <strong>NonDiabetic</strong>, and <strong>PreDiabetes</strong>. Different colors represent each group: <strong>red</strong> for Diabetic, <strong>blue</strong> for NonDiabetic, and <strong>green</strong> for PreDiabetes.</p>
 
-            <p>The correlation matrix revealed that BMI and HbA1c had a moderate positive correlation (0.46), while AGE showed a slightly weaker correlation with both BMI (0.40) and HbA1c (0.40). Interestingly, AGE was more strongly correlated with Diabetic status (0.48), suggesting that older individuals in the dataset were more likely to have diabetes, aligning with what we saw in the scatter plot.</p>
+            <p>Threshold lines help interpret the data:</p>
+            <ul>
+                <li><strong>Horizontal line at BMI = 25</strong> (overweight threshold).</li>
+                <li><strong>Vertical lines for HbA1c thresholds</strong>:
+                    <ul>
+                        <li><strong>Purple line at 5.7%</strong> (PreDiabetes cutoff).</li>
+                        <li><strong>Orange line at 6.5%</strong> (Diabetes threshold).</li>
+                    </ul>
+                </li>
+            </ul>
 
-            <p>The histograms further clarified these patterns, showing that Diabetic individuals tend to have higher BMI values, while NonDiabetic individuals have lower, more concentrated BMI values. In terms of AGE, we observed that older individuals were more likely to fall into the Diabetic group, as indicated by the stronger correlation between AGE and diabetes status.</p>
+            <p>This visualization highlights the interaction between BMI and HbA1c, showing how individuals with higher HbA1c levels often have elevated BMIs. The overlap and divergence between groups provide insight into the role of BMI and HbA1c in diabetes risk.</p>
         </div>
 
         <div style="flex: 1; min-width: 300px; text-align: center;">
@@ -186,9 +195,9 @@
         </div>
     </div>
 
-    <p>Reflecting on this project, it has been an insightful learning experience that reinforced the power of combining multiple visualization methods and statistical tools. The correlation matrix not only confirmed visual trends but also helped quantify the relationships between <strong>AGE</strong>, <strong>BMI</strong>, <strong>HbA1c</strong>, and <strong>Diabetic status</strong>.</p>
+    <p>Combining scatter plots, correlation matrices, and histograms provided a comprehensive view of diabetes risk factors. The correlation matrix confirmed a moderate positive relationship between <strong>BMI and HbA1c (0.46)</strong> and showed that <strong>AGE correlates more strongly with Diabetic status (0.48)</strong>. Histograms reinforced these findings, showing that Diabetic individuals tend to have higher BMI values.</p>
 
-    <p>Seeing how AGE plays a significant role in the likelihood of diabetes, alongside the correlations between BMI and HbA1c, helped me understand the multifaceted nature of diabetes risk. This project has deepened my appreciation for how data visualization and analysis can tell a comprehensive story about health data. The insights gained here are not only valuable for understanding diabetes but also for guiding future research and decision-making in healthcare. It’s clear that factors like BMI, HbA1c, and AGE should all be considered when assessing diabetes risk, and this project has been a valuable exercise in how to analyze and visualize such complex relationships.</p>
+    <p>This project underscored the value of data visualization in health analysis. Seeing how BMI, HbA1c, and AGE interact highlights the complexity of diabetes risk factors and the importance of multidimensional analysis in medical research.</p>
 </section>
 </body>
 </html>
