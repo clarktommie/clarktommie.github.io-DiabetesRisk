@@ -27,59 +27,71 @@
 <section>
     <h2>Uncovering Relationships in the Data: The Correlation Matrix</h2>
 
-    <p>To understand how different factors in our dataset relate to each other, we use a correlation matrix. This allows us to identify strong connections between features and better understand the underlying relationships in the data.</p>
+    <div style="display: flex; align-items: center; gap: 30px; flex-wrap: wrap;">
+        <div style="flex: 1; min-width: 350px;">
+            <p>To understand how different factors in our dataset relate to each other, we use a correlation matrix. This allows us to identify strong connections between features and better understand the underlying relationships in the data.</p>
 
-    <p>For example, we observe that <strong>BMI</strong> has a strong positive correlation with <strong>diabetes status</strong> (0.589) and a moderate positive correlation with <strong>HbA1c</strong> (0.455). This suggests that individuals with higher BMI are more likely to be diabetic and may also exhibit higher HbA1c levels, a critical marker for diabetes risk.</p>
+            <p>For example, we observe that <strong>BMI</strong> has a strong positive correlation with <strong>diabetes status</strong> (0.589) and a moderate positive correlation with <strong>HbA1c</strong> (0.455). This suggests that individuals with higher BMI are more likely to be diabetic and may also exhibit higher HbA1c levels, a critical marker for diabetes risk.</p>
 
-    <p>Additionally, <strong>age</strong> shows a moderate positive correlation with <strong>diabetes status</strong> (0.478), indicating that older individuals are more likely to develop diabetes. <strong>HbA1c</strong> also strongly correlates with <strong>diabetes status</strong> (0.567), further emphasizing the importance of HbA1c levels in predicting diabetes.</p>
+            <p>Additionally, <strong>age</strong> shows a moderate positive correlation with <strong>diabetes status</strong> (0.478), indicating that older individuals are more likely to develop diabetes. <strong>HbA1c</strong> also strongly correlates with <strong>diabetes status</strong> (0.567), further emphasizing the importance of HbA1c levels in predicting diabetes.</p>
 
-    <p>These key correlations—particularly between BMI, HbA1c, age, and diabetes status—will guide our next visualization, where we will explore how these features interact in more detail.</p>
+            <p>These key correlations—particularly between BMI, HbA1c, age, and diabetes status—will guide our next visualization, where we will explore how these features interact in more detail.</p>
+        </div>
 
-    <!-- Styled image container -->
-    <div style="display: flex; justify-content: center; margin: 30px 0;">
-        <img src="https://raw.githubusercontent.com/clarktommie/clarktommie.github.io-DiabetesRisk/383f02bf86e882240b5ddda61bc52f2272629243/Correlation.jpeg" 
-             alt="Correlation Matrix Heatmap 2" 
-             style="max-width: 100%; width: 700px; height: auto; border-radius: 12px; box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);">
+        <div style="flex: 1.2; min-width: 450px; text-align: center;">
+            <img src="https://raw.githubusercontent.com/clarktommie/clarktommie.github.io-DiabetesRisk/383f02bf86e882240b5ddda61bc52f2272629243/Correlation.jpeg" 
+                 alt="Correlation Matrix Heatmap" 
+                 style="max-width: 100%; width: 650px; height: auto; border-radius: 12px; box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);">
+            <p style="font-size: 0.9em; color: gray;">Figure: Correlation Matrix Heatmap</p>
+        </div>
     </div>
 </section>
 <section>
     <h2>Analyzing Key Relationships: Correlation Between AGE, BMI, HbA1c, and Diabetes Status</h2>
 
-    <p>As we dug deeper into the data, we decided to zoom in on four key factors that we believed had a major impact on diabetes risk: <strong>AGE</strong>, <strong>BMI</strong>, <strong>HbA1c</strong>, and <strong>Diabetic status</strong>. These are all important markers when trying to assess someone’s likelihood of developing diabetes, so understanding how they relate to one another was critical.</p>
+    <div style="display: flex; align-items: center; gap: 30px; flex-wrap: wrap;">
+        <div style="flex: 1; min-width: 350px;">
+            <p>As we dug deeper into the data, we decided to zoom in on four key factors that we believed had a major impact on diabetes risk: <strong>AGE</strong>, <strong>BMI</strong>, <strong>HbA1c</strong>, and <strong>Diabetic status</strong>. These are all important markers when trying to assess someone’s likelihood of developing diabetes, so understanding how they relate to one another was critical.</p>
 
-    <p>We started by calculating the correlation between these variables, which gave us a clearer picture of their connections. What we found was telling:</p>
-    <ul>
-        <li>There’s a <strong>strong positive relationship</strong> between <strong>BMI</strong> and <strong>Diabetic status</strong> (0.589). This makes sense: higher BMI is often linked with a higher risk of developing diabetes, which is what we’re seeing here.</li>
-        <li><strong>BMI</strong> and <strong>HbA1c</strong> are also <strong>moderately correlated</strong> (0.455), further supporting the idea that individuals with higher BMI tend to have elevated HbA1c levels, another key indicator of diabetes.</li>
-        <li>We also found that <strong>AGE</strong> has a <strong>moderate positive correlation</strong> with <strong>Diabetic status</strong> (0.478), indicating that as people get older, the likelihood of being diabetic increases—a well-known trend in diabetes research.</li>
-        <li>Lastly, <strong>HbA1c</strong> and <strong>Diabetic status</strong> showed a <strong>strong correlation</strong> (0.567), emphasizing the role HbA1c plays in diagnosing and predicting diabetes.</li>
-    </ul>
+            <p>We started by calculating the correlation between these variables, which gave us a clearer picture of their connections. What we found was telling:</p>
+            <ul>
+                <li>There’s a <strong>strong positive relationship</strong> between <strong>BMI</strong> and <strong>Diabetic status</strong> (0.589). This makes sense: higher BMI is often linked with a higher risk of developing diabetes, which is what we’re seeing here.</li>
+                <li><strong>BMI</strong> and <strong>HbA1c</strong> are also <strong>moderately correlated</strong> (0.455), further supporting the idea that individuals with higher BMI tend to have elevated HbA1c levels, another key indicator of diabetes.</li>
+                <li>We also found that <strong>AGE</strong> has a <strong>moderate positive correlation</strong> with <strong>Diabetic status</strong> (0.478), indicating that as people get older, the likelihood of being diabetic increases—a well-known trend in diabetes research.</li>
+                <li>Lastly, <strong>HbA1c</strong> and <strong>Diabetic status</strong> showed a <strong>strong correlation</strong> (0.567), emphasizing the role HbA1c plays in diagnosing and predicting diabetes.</li>
+            </ul>
 
-    <p>By visualizing these correlations in a heatmap, we could easily spot these connections and understand how each factor plays a role in the bigger picture of diabetes risk. This insight sets the stage for our next step, where we’ll dive deeper into how BMI, AGE, and HbA1c interact with one another to better understand the full scope of diabetes risk.</p>
+            <p>By visualizing these correlations in a heatmap, we could easily spot these connections and understand how each factor plays a role in the bigger picture of diabetes risk. This insight sets the stage for our next step, where we’ll dive deeper into how BMI, AGE, and HbA1c interact with one another to better understand the full scope of diabetes risk.</p>
+        </div>
 
-    <!-- Styled image container -->
-    <div style="display: flex; justify-content: center; margin: 30px 0;">
-        <img src="https://raw.githubusercontent.com/clarktommie/clarktommie.github.io-DiabetesRisk/383f02bf86e882240b5ddda61bc52f2272629243/Correlation2.jpeg" 
-             alt="Correlation Matrix Heatmap 2" 
-             style="max-width: 100%; width: 700px; height: auto; border-radius: 12px; box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);">
+        <div style="flex: 1.2; min-width: 450px; text-align: center;">
+            <img src="https://raw.githubusercontent.com/clarktommie/clarktommie.github.io-DiabetesRisk/383f02bf86e882240b5ddda61bc52f2272629243/Correlation2.jpeg" 
+                 alt="Correlation Matrix Heatmap 2" 
+                 style="max-width: 100%; width: 650px; height: auto; border-radius: 12px; box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);">
+            <p style="font-size: 0.9em; color: gray;">Figure: Correlation Matrix Heatmap</p>
+        </div>
     </div>
 </section>
 <section>
     <h2>Analyzing HbA1c Distribution by Diabetes Status</h2>
 
-    <p>In the box plot, the x-axis represents <strong>Diabetes Status</strong>, where 0 corresponds to non-diabetic individuals and 1 corresponds to those with diabetes. The y-axis displays <strong>HbA1c</strong> levels, which are crucial for understanding blood sugar control.</p>
+    <div style="display: flex; align-items: center; gap: 30px; flex-wrap: wrap;">
+        <div style="flex: 1; min-width: 350px;">
+            <p>In the box plot, the x-axis represents <strong>Diabetes Status</strong>, where 0 corresponds to non-diabetic individuals and 1 corresponds to those with diabetes. The y-axis displays <strong>HbA1c</strong> levels, which are crucial for understanding blood sugar control.</p>
 
-    <p>For the Non-Diabetic group (represented by 0), the box plot shows that most HbA1c values fall between 4.3 and 5.8, with the median around 5.0. This indicates that non-diabetic individuals typically have normal blood sugar levels.</p>
+            <p>For the Non-Diabetic group (represented by 0), the box plot shows that most HbA1c values fall between 4.3 and 5.8, with the median around 5.0. This indicates that non-diabetic individuals typically have normal blood sugar levels.</p>
 
-    <p>In contrast, the Diabetic group (represented by 1) has a much higher spread of HbA1c values, ranging from 2.0 to 16.0. The bulk of the data falls between 7.3 and 10.6, with the median at 8.9. The plot also shows a few extreme outliers, with some individuals having HbA1c values as high as 16.0, reflecting poorly controlled blood sugar.</p>
+            <p>In contrast, the Diabetic group (represented by 1) has a much higher spread of HbA1c values, ranging from 2.0 to 16.0. The bulk of the data falls between 7.3 and 10.6, with the median at 8.9. The plot also shows a few extreme outliers, with some individuals having HbA1c values as high as 16.0, reflecting poorly controlled blood sugar.</p>
 
-    <p>This comparison between the two groups visually highlights how much more variable and higher <strong>HbA1c</strong> levels are in individuals with diabetes compared to those without.</p>
+            <p>This comparison between the two groups visually highlights how much more variable and higher <strong>HbA1c</strong> levels are in individuals with diabetes compared to those without.</p>
+        </div>
 
-    <!-- Styled image container -->
-    <div style="display: flex; justify-content: center; margin: 30px 0;">
-        <img src="https://raw.githubusercontent.com/clarktommie/clarktommie.github.io-DiabetesRisk/383f02bf86e882240b5ddda61bc52f2272629243/BoxPlot.jpeg" 
-             alt="Box Plot of HbA1c Distribution by Diabetes Status" 
-             style="max-width: 100%; width: 700px; height: auto; border-radius: 12px; box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);">
+        <div style="flex: 1.2; min-width: 450px; text-align: center;">
+            <img src="https://raw.githubusercontent.com/clarktommie/clarktommie.github.io-DiabetesRisk/383f02bf86e882240b5ddda61bc52f2272629243/BoxPlot.jpeg" 
+                 alt="Box Plot of HbA1c Distribution by Diabetes Status" 
+                 style="max-width: 100%; width: 650px; height: auto; border-radius: 12px; box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);">
+            <p style="font-size: 0.9em; color: gray;">Figure: Box Plot of HbA1c Distribution by Diabetes Status</p>
+        </div>
     </div>
 </section>
 <section>
@@ -123,6 +135,7 @@
         <li><span style="color: blue;"><strong>Blue:</strong></span> NonDiabetic</li>
         <li><span style="color: green;"><strong>Green:</strong></span> PreDiabetes</li>
     </ul>
+
     <p>Each histogram displays the spread of BMI values for each group, with the <strong>Kernel Density Estimate (KDE)</strong> curve providing a smooth estimation of the distribution.</p>
 
     <p>Looking at the data:</p>
