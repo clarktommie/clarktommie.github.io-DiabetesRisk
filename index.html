@@ -41,45 +41,43 @@
 <section>
     <h2>Analyzing Key Relationships: Correlation Between AGE, BMI, HbA1c, and Diabetes Status</h2>
 
-    <p>After identifying the variables that seemed to have the most potential impact on diabetes, we decided to zoom in on a few key factors: <strong>AGE</strong>, <strong>BMI</strong>, <strong>HbA1c</strong>, and <strong>Diabetic status</strong>. These are all crucial indicators for understanding diabetes risk, so it’s important to see how they interact with one another.</p>
+    <p>To deepen our understanding of the key factors influencing diabetes, we’ve focused on four important variables: <strong>AGE</strong>, <strong>BMI</strong>, <strong>HbA1c</strong>, and <strong>Diabetic status</strong>. These factors play crucial roles in assessing diabetes risk, so exploring their relationships with one another is vital.</p>
 
-    <p>We calculated the correlation matrix for these variables to identify any strong relationships. The resulting heatmap visually shows us how closely related each of these factors is. For instance, we might see a strong positive correlation between <strong>BMI</strong> and <strong>HbA1c</strong>, which makes sense because both are important in assessing diabetes risk.</p>
+    <p>We computed the correlation matrix for these variables to identify any significant connections. The resulting heatmap provides a visual representation of the strength of these relationships. For example, a strong positive correlation between <strong>BMI</strong> and <strong>HbA1c</strong> is expected, given that both are key indicators of diabetes risk.</p>
 
-    <p>By visualizing the correlation matrix, we can easily spot patterns that will help guide our further analysis and give us deeper insights into how these factors contribute to diabetes.</p>
+    <p>By examining this matrix, we can quickly identify patterns that guide our analysis, offering valuable insights into how these factors influence the likelihood of diabetes.</p>
 
     <!-- Styled image container -->
-    <div style="display: flex; justify-content: center; margin: 20px 0;">
+    <div style="display: flex; justify-content: center; margin: 30px 0;">
         <img src="https://raw.githubusercontent.com/clarktommie/clarktommie.github.io-DiabetesRisk/383f02bf86e882240b5ddda61bc52f2272629243/Correlation2.jpeg" 
              alt="Correlation Matrix Heatmap 2" 
-             style="max-width: 90%; width: 500px; height: auto; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+             style="max-width: 100%; width: 700px; height: auto; border-radius: 12px; box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);">
     </div>
-
 </section>
 <section>
     <h2>Analyzing HbA1c Distribution by Diabetes Status</h2>
 
-    <p>To better understand how <strong>HbA1c</strong> levels vary between diabetic and non-diabetic individuals, we can visualize the distribution of this key indicator using a <strong>box plot</strong>. <strong>HbA1c</strong> is an important measure for diagnosing and managing diabetes, as it reflects the average blood sugar levels over the past two to three months.</p>
+    <p>To understand how <strong>HbA1c</strong> levels differ between diabetic and non-diabetic individuals, we visualize the distribution of this key metric using a <strong>box plot</strong>. <strong>HbA1c</strong> is critical for diagnosing and managing diabetes, as it reflects average blood sugar levels over the past two to three months.</p>
 
-    <div style="display: flex; align-items: center; gap: 20px; flex-wrap: wrap;">
-        <div style="flex: 1; min-width: 300px;">
-            <p>The x-axis represents the <strong>Diabetes Status</strong> (whether an individual is Diabetic or Non-Diabetic), while the y-axis shows the <strong>HbA1c</strong> values. The box plot provides a clear visualization of the spread of HbA1c levels within each group, including:</p>
+    <div style="display: flex; justify-content: space-between; gap: 30px; flex-wrap: wrap;">
+        <div style="flex: 1; min-width: 280px; padding: 20px;">
+            <p>The x-axis represents the <strong>Diabetes Status</strong> (whether an individual is Diabetic or Non-Diabetic), while the y-axis shows the <strong>HbA1c</strong> values. The box plot highlights the following elements:</p>
             <ul>
-                <li><strong>Median:</strong> The central line inside the box.</li>
-                <li><strong>Interquartile Range (IQR):</strong> The box itself, showing the middle 50% of data.</li>
-                <li><strong>Outliers:</strong> Individual points beyond the whiskers.</li>
+                <li><strong>Median:</strong> The central line within the box.</li>
+                <li><strong>Interquartile Range (IQR):</strong> The box itself, showing the middle 50% of the data.</li>
+                <li><strong>Outliers:</strong> Individual points that fall outside the whiskers.</li>
             </ul>
-            <p>This plot allows us to compare the central tendencies and variability of <strong>HbA1c</strong> levels across different diabetes statuses, providing valuable insights into how HbA1c differs between individuals with and without diabetes.</p>
+            <p>This visualization helps us compare the central tendencies and variability of <strong>HbA1c</strong> levels between Diabetic and Non-Diabetic individuals, offering insights into how HbA1c varies between these groups.</p>
         </div>
 
         <div style="flex: 1; min-width: 300px; text-align: center;">
             <img src="https://raw.githubusercontent.com/clarktommie/clarktommie.github.io-DiabetesRisk/383f02bf86e882240b5ddda61bc52f2272629243/BoxPlot.jpeg" 
                  alt="Box Plot of HbA1c Distribution by Diabetes Status" 
-                 style="max-width: 100%; width: 450px; height: auto; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
-            <p style="font-size: 0.9em; color: gray;">Figure: Box Plot of HbA1c Distribution by Diabetes Status</p>
+                 style="max-width: 100%; width: 450px; height: auto; border-radius: 12px; box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);">
+            <p style="font-size: 0.9em; color: gray; margin-top: 10px;">Figure: Box Plot of HbA1c Distribution by Diabetes Status</p>
         </div>
     </div>
 </section>
-
 <section>
     <h2>Distribution of BMI by Diabetes Status</h2>
 
