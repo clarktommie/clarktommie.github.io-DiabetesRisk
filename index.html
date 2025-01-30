@@ -99,34 +99,27 @@
 
     <p>To explore how <strong>BMI</strong> and <strong>AGE</strong> are related to diabetes status, we’ve created a scatter plot that shows the relationship between these two variables across three groups: <strong>Diabetic</strong>, <strong>NonDiabetic</strong>, and <strong>PreDiabetes</strong> individuals.</p>
 
-    <p>In this plot, we use different colors to represent each group:</p>
-    <ul>
-        <li><span style="color: red;"><strong>Red:</strong></span> Diabetic</li>
-        <li><span style="color: blue;"><strong>Blue:</strong></span> NonDiabetic</li>
-        <li><span style="color: green;"><strong>Green:</strong></span> PreDiabetes</li>
-    </ul>
+    <div style="display: flex; align-items: center; gap: 40px; flex-wrap: wrap;">
+        <div style="flex: 1; min-width: 350px;">
+            <p>Each point on the scatter plot represents an individual, with their <strong>AGE</strong> on the x-axis and their <strong>BMI</strong> on the y-axis. A <strong>horizontal line at BMI = 25</strong> is included to highlight the threshold between normal weight and overweight.</p>
+            <p>The plot allows us to examine how BMI and age correlate with diabetes status and identify trends among different groups.</p>
+            <p>Key observations:</p>
+            <ul>
+                <li><strong>Diabetic individuals</strong> tend to have a higher BMI and are generally older.</li>
+                <li><strong>NonDiabetic individuals</strong> usually have a lower BMI and are younger.</li>
+                <li><strong>PreDiabetes individuals</strong> fall in between, with BMI values suggesting an increased risk of developing diabetes.</li>
+            </ul>
+        </div>
 
-    <p>Each point on the scatter plot corresponds to an individual, with their <strong>AGE</strong> on the x-axis and their <strong>BMI</strong> on the y-axis. A <strong>horizontal line at BMI = 25</strong> was added to highlight the threshold between normal weight and overweight.</p>
-
-    <p>Looking at the data:</p>
-    <ul>
-        <li><strong>Diabetic individuals</strong> have a higher average BMI (30.82), with values ranging from 19.0 to 47.75. This group also tends to be older, with an average age of 55.4 years. The wide range of BMI values suggests that diabetes affects individuals across various weight categories, but with a strong tendency toward higher BMIs as age increases.</li>
-        <li><strong>NonDiabetic individuals</strong> have a lower average BMI (22.35), typically falling within a normal weight range (between 19.0 and 24.60). The average age of this group is 44.3 years, reflecting a younger population compared to diabetics. The BMI distribution is tighter, indicating fewer instances of overweight or obesity in this group.</li>
-        <li><strong>PreDiabetes individuals</strong> have an average BMI of 24.11, with values ranging from 19.0 to 32.0. Their BMI distribution suggests that they are at an increased risk of developing diabetes, with more individuals falling into the overweight category but not yet reaching the higher BMI levels seen in the diabetic group. Their average age is 43.4 years, which is similar to non-diabetic individuals, but the higher BMI hints at a potential progression towards diabetes.</li>
-    </ul>
-
-    <p>These findings reinforce the earlier visual observations that <strong>Diabetic</strong> individuals generally have higher BMIs, particularly in older age groups, while <strong>NonDiabetic</strong> individuals maintain a lower BMI and are younger on average. <strong>PreDiabetes</strong> individuals occupy a middle ground, with higher BMIs than non-diabetics but lower than those in the diabetic group. This pattern highlights the relationship between BMI and diabetes status, underscoring the importance of BMI as a risk factor in the development of diabetes.</p>
-
-    <!-- Styled image container -->
-    <div style="display: flex; justify-content: center; margin: 30px 0;">
-        <div style="max-width: 600px; width: 100%;">
+        <div style="flex: 1.2; min-width: 450px; text-align: center;">
             <img src="https://raw.githubusercontent.com/clarktommie/clarktommie.github.io-DiabetesRisk/f8dfd66d72cf7dcf47e2e13ab42cc73a457c1745/BMIvsAGE.jpeg" 
                  alt="BMI vs AGE Scatter Plot by Diabetes Status" 
-                 style="width: 100%; height: auto; display: block; border-radius: 12px; box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);">
-            <p style="text-align: center; font-size: 0.9em; color: gray;">Figure: BMI vs AGE Scatter Plot by Diabetes Status</p>
+                 style="max-width: 100%; width: 600px; height: auto; border-radius: 12px; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);">
+            <p style="font-size: 1em; color: gray;">Figure: BMI vs AGE Scatter Plot by Diabetes Status</p>
         </div>
     </div>
 </section>
+
 <section>
     <h2>Distribution of BMI by Diabetes Status</h2>
 
