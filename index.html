@@ -125,31 +125,23 @@
 
     <p>To understand how <strong>Body Mass Index (BMI)</strong> differs across various diabetes statuses, we’ve plotted histograms for three groups: <strong>Diabetic</strong>, <strong>NonDiabetic</strong>, and <strong>PreDiabetes</strong> individuals.</p>
 
-    <p>The histograms are color-coded to differentiate between the groups:</p>
-    <ul>
-        <li><span style="color: red;"><strong>Red:</strong></span> Diabetic</li>
-        <li><span style="color: blue;"><strong>Blue:</strong></span> NonDiabetic</li>
-        <li><span style="color: green;"><strong>Green:</strong></span> PreDiabetes</li>
-    </ul>
+    <div style="display: flex; align-items: center; gap: 40px; flex-wrap: wrap;">
+        <div style="flex: 1; min-width: 350px;">
+            <p>Each histogram shows the spread of BMI values for each group, with a <strong>Kernel Density Estimate (KDE)</strong> curve providing a smooth estimation of the distribution.</p>
+            <p>Key observations:</p>
+            <ul>
+                <li><strong>Diabetic individuals</strong> have a higher average BMI (30.82), with a peak around 30.0, indicating a tendency toward overweight and obesity.</li>
+                <li><strong>NonDiabetic individuals</strong> have a lower average BMI (22.35), with most values clustering around 22.0, within a normal BMI range.</li>
+                <li><strong>PreDiabetes individuals</strong> have an average BMI of 24.11, showing a shift toward higher BMI compared to non-diabetics but not reaching diabetic levels.</li>
+            </ul>
+            <p>These patterns highlight the connection between higher BMI and an increased likelihood of developing diabetes, reinforcing BMI’s role as a risk factor.</p>
+        </div>
 
-    <p>Each histogram displays the spread of BMI values for each group, with the <strong>Kernel Density Estimate (KDE)</strong> curve providing a smooth estimation of the distribution.</p>
-
-    <p>Looking at the data:</p>
-    <ul>
-        <li><strong>Diabetic individuals</strong> tend to have a higher average BMI (30.82) with a range from 19.0 to 47.75. The BMI for this group is more spread out, with a noticeable peak around 30.0, showing that a significant portion of diabetic individuals fall within the higher BMI range.</li>
-        <li><strong>NonDiabetic individuals</strong> have a lower average BMI (22.35) and a tighter distribution, with a range from 19.0 to 24.60. This group shows a concentration of BMI values around 22.0, which suggests that most non-diabetic individuals fall within a normal BMI range.</li>
-        <li><strong>PreDiabetes individuals</strong> have an average BMI of 24.11, with a range from 19.0 to 32.0. The distribution shows a slight shift toward higher BMI compared to non-diabetics, but not as high as the diabetic group.</li>
-    </ul>
-
-    <p>These histograms make it clear that Diabetic individuals generally have higher BMIs than NonDiabetic individuals, with PreDiabetes falling somewhere in between. This pattern suggests a relationship between higher BMI and an increased likelihood of developing diabetes, which is something to consider for further analysis.</p>
-
-    <!-- Styled image container -->
-    <div style="display: flex; justify-content: center; margin: 30px 0; flex-wrap: wrap; gap: 20px;">
-        <div style="flex: 1; min-width: 300px; text-align: center;">
+        <div style="flex: 1.2; min-width: 450px; text-align: center;">
             <img src="https://raw.githubusercontent.com/clarktommie/clarktommie.github.io-DiabetesRisk/383f02bf86e882240b5ddda61bc52f2272629243/Histogram.jpeg" 
                  alt="BMI Distribution Histogram by Diabetes Status" 
-                 style="max-width: 100%; width: 600px; height: auto; border-radius: 12px; box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);">
-            <p style="font-size: 0.9em; color: gray;">Figure: BMI Distribution Histogram by Diabetes Status</p>
+                 style="max-width: 100%; width: 600px; height: auto; border-radius: 12px; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);">
+            <p style="font-size: 1em; color: gray;">Figure: BMI Distribution Histogram by Diabetes Status</p>
         </div>
     </div>
 </section>
