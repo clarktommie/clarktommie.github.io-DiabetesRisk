@@ -85,6 +85,21 @@
 
     <img src="https://raw.githubusercontent.com/clarktommie/clarktommie.github.io-DiabetesRisk/457d26d8d871f23317a88d18fa32a49b7339fdfe/encoding.jpeg" 
          alt="Encoding categorical variables into dummy variables">
+
+    <h3>Tidying Up the Dataset for Easier Analysis</h3>
+
+    <p>As we refine our dataset, we find opportunities to streamline and enhance its structure. Some columns can be merged, while others need clearer, more intuitive names to improve readability and usability.</p>
+
+    <p>First, we address a redundancy in the <strong>Gender</strong> column. Our dataset contains two separate columns for female gender—one labeled with an uppercase "F" and the other with a lowercase "f." To eliminate this duplication, we merge them into a single column named <strong>Female</strong>.</p>
+
+    <p>Next, we simplify the representation of diabetes status. Previously, we had multiple columns indicating whether a person was diabetic or not. We consolidate these into two clear categories: <strong>NonDiabetic</strong> and <strong>Diabetic</strong>, making future analysis more efficient.</p>
+
+    <p>Additionally, we enhance column names for better clarity. The column for male gender is renamed to <strong>Male</strong>, and the one indicating the pre-diabetic stage is updated to <strong>PreDiabetes</strong>. These changes ensure consistency and ease of interpretation.</p>
+
+    <p>With these refinements, our dataset is now cleaner and more structured, setting the stage for deeper analysis.</p>
+
+    <img src="https://raw.githubusercontent.com/clarktommie/clarktommie.github.io-DiabetesRisk/f12e422ce9f98952236d9fbb5cef12969605aec2/final_df.jpeg" 
+         alt="Final cleaned dataset">
 </section>
 
 <section>
