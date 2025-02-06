@@ -20,8 +20,25 @@
 
     <p>Additionally, we can further break down this relationship by using histograms to compare the BMI distribution between diabetic and non-diabetic individuals. This will help us understand whether people with higher BMI are more likely to be diabetic, or if other factors come into play.</p>
 </section>
+<section>
+    <h2>Scrubbing and Cleaning the Data</h2>
 
-    
+    <h3>Kicking Off the Data Cleaning Process</h3>
+
+    <p>Before we can begin analyzing our data, it's essential to clean it up and remove any unnecessary clutter. At the start of our cleaning process, we focus on dropping irrelevant columns that won’t contribute to our analysis.</p>
+
+    <p>In this step, we're removing the <strong>ID</strong> and <strong>No_Pation</strong> columns. The <strong>ID</strong> column usually serves as a unique identifier for each entry, but it doesn't add any value for our analysis. Similarly, <strong>No_Pation</strong> appears to be a label or reference number, which we also don’t need for exploring relationships or patterns in the data.</p>
+
+    <p>By dropping these columns, we’re streamlining the dataset and keeping only the information that matters for our analysis going forward.</p>
+
+    <div style="text-align: center; margin-top: 20px;">
+        <img src="https://raw.githubusercontent.com/clarktommie/clarktommie.github.io-DiabetesRisk/92be6f7de89298e28eccc60de29838b0d6899225/dropping_columns_1.jpeg" 
+             alt="Dropping ID and No_Pation Columns" 
+             style="max-width: 100%; height: auto; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+        <p style="font-size: 0.9em; color: gray; margin-top: 10px;">Figure: Dropping ID and No_Pation Columns</p>
+    </div>
+</section>
+   
 <section>
     <h2>Uncovering Relationships in the Data: The Correlation Matrix</h2>
 
