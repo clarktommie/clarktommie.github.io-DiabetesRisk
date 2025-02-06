@@ -35,7 +35,18 @@
          alt="Dropping Columns Visualization" 
          style="max-width: 100%; height: auto; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); margin-top: 15px;">
 </section>
-   
+<section>
+    <h3>Checking for Missing Values</h3>
+
+    <p>Now that we’ve cleaned up some unnecessary columns, the next step is to ensure that our dataset is complete. <strong>Missing values</strong> can be a common issue in many datasets, and they can cause problems during analysis or modeling if not handled properly.</p>
+
+    <p>In this step, we check for any missing values across the entire dataset using the <code>isnull()</code> function. This function will identify missing values in each column, and by applying <code>sum()</code>, we can count how many are present in each column. This gives us a clear picture of where the data might be incomplete.</p>
+
+    <p>Once we determine where the missing values are, we can decide on the best way to handle them—whether by filling them in, removing rows, or using other techniques. This ensures our analysis remains accurate and free from biases caused by incomplete data.</p>
+
+    <img src="https://raw.githubusercontent.com/clarktommie/clarktommie.github.io-DiabetesRisk/5002c53a0e31179675a915ccb181e1a6d33c8486/check_for_missing_values.jpeg" 
+         alt="Checking for Missing Values in the Dataset">
+</section>
 <section>
     <h2>Uncovering Relationships in the Data: The Correlation Matrix</h2>
 
