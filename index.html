@@ -53,6 +53,23 @@
 
     <img src="https://raw.githubusercontent.com/clarktommie/clarktommie.github.io-DiabetesRisk/5002c53a0e31179675a915ccb181e1a6d33c8486/check_for_missing_values.jpeg" 
          alt="Checking for Missing Values in the Dataset">
+
+    <h3>Handling Missing Values: Why Dropping Rows Makes Sense</h3>
+
+    <p>After checking for missing values in our dataset, we found that only a few entries were incomplete. Specifically, columns like <strong>AGE</strong>, <strong>Urea</strong>, and <strong>HbA1c</strong> had a small number of missing values—ranging from 1 to 3 missing entries per column.</p>
+
+    <p>Given that such a small percentage of data is missing, <strong>dropping these rows</strong> is a practical approach. Here’s why:</p>
+
+    <ul>
+        <li><strong>Minimal Data Loss:</strong> Since only a few rows are affected, removing them won’t significantly impact the dataset’s size or representativeness.</li>
+        <li><strong>Simplicity:</strong> This method is straightforward and avoids potential biases introduced by imputing missing values.</li>
+        <li><strong>Data Integrity:</strong> Ensures that all remaining rows are complete, making the dataset more reliable for analysis and modeling.</li>
+    </ul>
+
+    <p>After removing these rows, we verified that no missing values remain, leaving us with a clean dataset, ready for further analysis.</p>
+
+    <img src="https://raw.githubusercontent.com/clarktommie/clarktommie.github.io-DiabetesRisk/54be939c1eacd12d1f4cd21f44f4d67cd21486b5/dropRows_missingValues.jpeg" 
+         alt="Dropped Rows with Missing Values">
 </section>
 <section>
     <h2>Uncovering Relationships in the Data: The Correlation Matrix</h2>
